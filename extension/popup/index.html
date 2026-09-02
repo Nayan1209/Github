@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GitHub AI Agent</title>
+  <link rel="stylesheet" href="./popup.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand"><span class="mark">✦</span><div><h1>GitHub AI Agent</h1><p>Daily repository automation</p></div></div>
+      <span id="status" class="status off">OFF</span>
+    </header>
+
+    <section class="card">
+      <label for="repository">Repository</label>
+      <input id="repository" placeholder="Nayan1209/project" autocomplete="off">
+      <small>Use the GitHub <strong>owner/repository</strong> format.</small>
+    </section>
+
+    <section class="grid">
+      <div class="card"><label for="hour">Daily run</label><select id="hour"></select></div>
+      <div class="card"><label for="mode">Safety mode</label><select id="mode"><option value="pull-request">Pull Request</option><option value="direct">Direct main (later)</option></select></div>
+    </section>
+
+    <button id="toggle" class="primary">Enable daily agent</button>
+    <button id="save" class="secondary">Save settings</button>
+    <p id="message" class="message"></p>
+  </main>
+  <script src="./popup.js"></script>
+</body>
+</html>
