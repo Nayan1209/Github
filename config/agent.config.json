@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "safety": {
+    "defaultMode": "pull-request",
+    "maxChangesPerRun": 1,
+    "protectedPaths": [
+      ".env",
+      ".env.*",
+      ".github/workflows/*",
+      "package-lock.json",
+      "pnpm-lock.yaml",
+      "yarn.lock",
+      "bun.lockb"
+    ],
+    "allowDirectMain": false
+  },
+  "agent": {
+    "principle": "Make only meaningful, low-risk improvements. If no worthwhile improvement exists, do nothing."
+  }
+}
