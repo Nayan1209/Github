@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub AI Agent",
+  "version": "0.1.0",
+  "description": "Control and monitor an AI agent that performs safe, meaningful GitHub maintenance.",
+  "permissions": [
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://api.github.com/*"
+  ],
+  "action": {
+    "default_title": "GitHub AI Agent",
+    "default_popup": "popup/index.html"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "options_page": "options/index.html"
+}
