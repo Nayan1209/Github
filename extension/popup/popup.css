@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 360px; font: 14px/1.5 Inter, system-ui, sans-serif; background: #0b0d10; color: #f4f7fb; }
+.app { padding: 18px; }
+header { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
+.brand { display:flex; gap:10px; align-items:center; }
+.mark { width:34px; height:34px; display:grid; place-items:center; border-radius:10px; background:#f4f7fb; color:#0b0d10; font-size:18px; }
+h1 { font-size:15px; margin:0; } p { margin:0; color:#8f98a6; } header p { font-size:11px; }
+.status { font-size:10px; font-weight:700; padding:4px 8px; border-radius:999px; } .off { background:#262b33; color:#aeb7c4; } .on { background:#183d2a; color:#73dfa1; }
+.card { background:#13171c; border:1px solid #242a32; border-radius:12px; padding:12px; margin-bottom:10px; }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; } .grid .card { margin-bottom:10px; }
+label { display:block; font-size:11px; color:#9ca6b4; margin-bottom:6px; text-transform:uppercase; letter-spacing:.06em; }
+input, select { width:100%; border:1px solid #2b323c; border-radius:8px; background:#0d1014; color:#fff; padding:9px; outline:none; } input:focus, select:focus { border-color:#6d7785; }
+small { display:block; color:#6f7885; margin-top:6px; font-size:10px; }
+button { width:100%; border:0; border-radius:9px; padding:10px; font-weight:700; cursor:pointer; margin-top:8px; } .primary { background:#f4f7fb; color:#0b0d10; } .secondary { background:#1b2027; color:#dce2ea; border:1px solid #2a313b; }
+.message { min-height:18px; font-size:11px; margin-top:8px; text-align:center; }
