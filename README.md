@@ -5,8 +5,8 @@
   "main": "src/action/index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint src/**/*.js",
-    "format": "prettier --write src/**/*.js"
+    "lint": "eslint \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.js\""
   },
   "dependencies": {
     "@actions/core": "^1.11.1",
